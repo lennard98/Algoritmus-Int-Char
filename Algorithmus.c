@@ -57,7 +57,7 @@ int main(int argc, char* argv[])
             if (Dezimalzahl < 65535)
             {
                 printf("Eingegebene Zahl ist: %d \n",Dezimalzahl);
-
+		inttochar(Dezimalzahl);
             }
 
             else
@@ -66,7 +66,7 @@ int main(int argc, char* argv[])
 
                 scanf("%d",&Dezimalzahl);
             }
-		inttochar(Dezimalzahl);
+		
 
 		return 0;
         case '?':
