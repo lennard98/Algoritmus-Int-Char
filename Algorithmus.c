@@ -5,9 +5,11 @@
 char inttochar(int Dezimalzahl)
 {
     long Quotient, Rest;
-    int      i, j=0;
-    char                        Hexadezimal[4] = {'0','0','0','0'};
+    int i, j=0;
+    char Hexadezimal[4] = {'0','0','0','0'};
+
     Quotient = Dezimalzahl;
+
     while (Quotient !=0)
     {
         Rest = Quotient % 16;
@@ -15,9 +17,10 @@ char inttochar(int Dezimalzahl)
             Hexadezimal[j++]= 48 + Rest;
         else
             Hexadezimal[j++]= 55 + Rest;
-        Quotient = Quotient / 16;
+            Quotient = Quotient / 16;
     }
-//Zeige Integer als Char
+    
+    //Zeige Integer als Char
     printf("Der Integer als Char ist:\n");
     for (i = 4; i>=0; i--)
     {
